@@ -22,7 +22,7 @@ const writeFile = tool(
 const agent = createAgent({ model, tools: [writeFile] });
 
 agent.invoke({
-  messages: "Create file demo.txt and write Hello World",
+  messages: "Create file lol.txt and write lol World",
 }).then(r =>
   console.log(r.messages.at(-1)?.content)
 );
